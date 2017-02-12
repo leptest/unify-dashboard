@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app>
+
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="assets/scripts.js"></script>
+		<meta charset=utf-8 />
+		<title>Unifi Dashboard</title>
+	</head>
+
+	<body ng-controller="ctrl">
+		<h1>Unifi Dashboard</h1>
+		<table style="width:50%;">
+			<tr ng-repeat="row in referrals">
+				<td><strong>Customer ID</strong> - {{row.customerID}}</td>
+				<td><strong>Merchant ID</strong> - {{row.merchantID}}</td>
+				<td><strong>Points</strong> - {{row.points}}</td>
+			</tr>
+		</table>
+	</body>
+
+</html>
