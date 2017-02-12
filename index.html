@@ -13,9 +13,11 @@
 		<h1>Unifi Dashboard</h1>
 		<table style="width:50%;">
 			<tr ng-repeat="row in referrals">
-				<td><strong>Customer ID</strong> - {{row.customerID}}</td>
+				<td><strong>From ID</strong> - {{row.fromID}}</td>
+				<td><strong>To ID</strong> - {{row.toID}}</td>
 				<td><strong>Merchant ID</strong> - {{row.merchantID}}</td>
 				<td><strong>Points</strong> - {{row.points}}</td>
+				<td><strong>Status</strong> - {{row.status}}</td>
 			</tr>
 		</table>
 	</body>
